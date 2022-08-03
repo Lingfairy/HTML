@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>The meta element</title>
+  </head>
+
+  <body>
+
+    <h2>The meta element</h2>
+    <img src="Images\Meta element.png" width="200">
+    <ul>
+      <li>Tells the browser how it should display the webpage</li>
+      <li>Can also give info to search engines about the content of the website (author, description, keywords etc.)</li>
+      <li><strong>charset</strong> = character set</li>
+      <li>In the above case, we're telling the browser that the text inside the webpage is encoded using the UTF-8 system</li>
+      <li>UTF-8 is the standard when working with HTML5. Basically a list of all the available characters that we can use for it to be rendered correctly.</li>
+    </ul>
+
+    <h3>Unicode and character sets</h3>
+    <ul>
+      <li>Good old unaccented English letters = <strong>ASCII</strong></li>
+      <li>Represented every character using a number between 32-127. Space was 32, “A” was 65, etc.</li>
+      <li>Codes below 32 were used for control characters, e.g., 7 made your computer beep</li>
+      <li>Could be stored in 7 bits (computers in those days were using 8-bit bytes)</li>
+      <br>
+      <li>Eventually came the <strong>ANSI</strong> standard (everyone agreed on 👆ASCII, but differed from 128 up)</li>
+      <li>The different systems were called <a href="http://www.i18nguy.com/unicode/codepages.html#msftdos">code pages</a> (e.g. Israel used CP 00862, while Arabic used CP 00864)</li>
+      <br>
+      <li>Then there came <strong>Unicode</strong></li>
+      <li><em>A brave effort to include every reasonable writing system on the planet</em></li>
+      <li>Every platonic (first principle) letter in every alphabet is assigned a number by the Unicode consortium, written: U+0639. This is called a code point. U+ => “Unicode” and the numbers were hexadecimal (using base 16 instead of the normal base 10)</li>
+    </ul>
+
+    <p>There were arguments over how to store these code points.</p>
+    <p>There are over a hundred encodings and above code point 127, all bets are off.</p>
+    <p><a href="http://www.utf-8.com/">UTF-8</a> is a method of storing (encoding) unicode code points.</p>
+
+    <center><h3>We use the charset attribute because it does not make sense to have a string without knowing what encoding it uses</h3></center>
+
+  </body>
+</html>
